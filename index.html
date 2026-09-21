@@ -67,7 +67,13 @@
     background:radial-gradient(circle at center,var(--teal) 0%,rgba(31,191,160,0) 70%);
     opacity:.5;
   }
-  .hero-in{position:relative;padding:76px 0 84px;max-width:720px}
+  .hero-in{position:relative;padding:72px 0 80px;display:grid;grid-template-columns:1.02fr .98fr;gap:52px;align-items:center}
+  .hero-copy{max-width:560px}
+  .hero-photo{position:relative;justify-self:end}
+  .hero-photo img{width:100%;height:auto;max-width:420px;aspect-ratio:4/5;object-fit:cover;border-radius:24px;box-shadow:0 24px 60px rgba(15,40,63,.18);display:block;position:relative;z-index:2}
+  .hero-photo:before{content:"";position:absolute;right:-22px;bottom:-22px;width:70%;height:70%;border-radius:24px;background:var(--teal);opacity:.16;z-index:1}
+  .btn-wa{background:#25D366;color:#fff}
+  .btn-wa:hover{background:#1ebe5b;transform:translateY(-1px)}
   .kicker{
     display:inline-flex;align-items:center;gap:8px;
     background:#fff;border:1px solid var(--line);
@@ -175,6 +181,10 @@
   @media(max-width:900px){
     .about-in{grid-template-columns:1fr;gap:32px}
     .hero-in{padding:56px 0 64px}
+    .hero-in{grid-template-columns:1fr;gap:36px}
+    .hero-photo{justify-self:center}
+    .hero-photo img{max-width:320px}
+    .hero-photo:before{display:none}
   }
   @media(max-width:600px){
     .wrap{padding:0 18px}
@@ -202,12 +212,20 @@
 <!-- HERO -->
 <section class="hero">
   <div class="wrap hero-in">
-    <span class="kicker"><span class="dot" style="width:8px;height:8px;border-radius:50%;background:var(--teal)"></span> Tienda oficial · <b>Belén Martínez</b></span>
-    <h1>Los productos LifeVantage que <span class="hl">recomiendo</span>, a un clic de comprar.</h1>
-    <p>Selección de mis productos estrella. Compras siempre en la tienda oficial de LifeVantage, con su envío y su garantía. Yo te acompaño en lo que necesites.</p>
-    <div class="hero-actions">
-      <a class="btn btn-primary" href="#productos">Ver productos</a>
-      <a class="btn btn-ghost" href="https://belenmartinez.lifevantage.com/es-es/shop/" target="_blank" rel="noopener">Explorar catálogo completo</a>
+    <div class="hero-copy">
+      <span class="kicker"><span class="dot" style="width:8px;height:8px;border-radius:50%;background:var(--teal)"></span> Tienda oficial · <b>Belén Martínez</b></span>
+      <h1>Los productos LifeVantage que <span class="hl">recomiendo</span>, a un clic de comprar.</h1>
+      <p>Selección de mis productos estrella. Compras siempre en la tienda oficial de LifeVantage, con su envío y su garantía. Yo te acompaño en lo que necesites.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#productos">Ver productos</a>
+        <a class="btn btn-wa" href="https://wa.me/34649042543" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 2.1.55 4.06 1.6 5.83L2 22l4.4-1.15a9.87 9.87 0 0 0 5.64 1.76h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.02h-.01a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-2.6.68.7-2.54-.2-.31a8.18 8.18 0 0 1-1.26-4.37c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.13-.14.17-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.42-.14 0-.31-.02-.47-.02-.16 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.16 1.75 2.67 4.25 3.74.59.26 1.06.41 1.42.52.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
+          Escríbeme por WhatsApp
+        </a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="assets/belen-real.jpg" alt="Belén Martínez, Consultora Independiente LifeVantage" width="420" height="525" loading="eager">
     </div>
   </div>
 </section>
