@@ -149,9 +149,10 @@
   }
   .avatar{
     width:64px;height:64px;border-radius:50%;background:var(--teal);
-    display:flex;align-items:center;justify-content:center;font-weight:800;font-size:24px;
-    color:#fff;margin-bottom:18px;
+    display:flex;align-items:center;justify-content:center;
+    margin-bottom:18px;overflow:hidden;
   }
+  .avatar img{width:100%;height:100%;object-fit:cover;border-radius:50%;display:block}
   .about h2{font-size:clamp(24px,3.4vw,34px);font-weight:800;letter-spacing:-.4px;margin-bottom:16px}
   .about p{color:var(--muted);font-size:16px;margin-bottom:16px}
   .about .btn-primary{margin-top:6px}
@@ -312,7 +313,7 @@
       <a class="btn btn-primary" href="https://wa.me/34649042543" target="_blank" rel="noopener">Hablar con Belén por WhatsApp</a>
     </div>
     <div class="about-card">
-      <div class="avatar">BM</div>
+      <div class="avatar"><img src="assets/belen.jpg" alt="Belén Martínez" width="64" height="64"></div>
       <h3 style="font-size:20px;margin-bottom:6px">Belén Martínez</h3>
       <p style="color:var(--muted);font-size:14px;margin-bottom:18px">Consultora Independiente LifeVantage</p>
       <div style="display:flex;flex-direction:column;gap:12px">
