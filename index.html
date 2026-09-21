@@ -9,6 +9,7 @@
 <meta property="og:title" content="Belén Martínez · Productos LifeVantage">
 <meta property="og:description" content="Los productos LifeVantage que recomiendo, con compra 100% en la tienda oficial.">
 <meta property="og:type" content="website">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -184,6 +185,18 @@
   }
   .disclaimer strong{color:#c9c9d2}
 
+  /* FAQ */
+  .faq{background:#fff}
+  .faq-in{max-width:760px;margin:0 auto}
+  .faq details{border:1px solid var(--line);border-radius:12px;margin-bottom:12px;background:var(--card);overflow:hidden}
+  .faq summary{list-style:none;cursor:pointer;padding:18px 22px;font-weight:600;font-size:16px;color:var(--ink);display:flex;justify-content:space-between;align-items:center;gap:16px}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary:after{content:"+";color:var(--teal);font-size:22px;font-weight:700;line-height:1}
+  .faq details[open] summary{color:var(--teal)}
+  .faq details[open] summary:after{content:"\2013"}
+  .faq details p{padding:0 22px 20px;margin:0;color:var(--muted);font-size:15px;line-height:1.65}
+  .faq a{color:var(--teal);font-weight:600}
+
   @media(max-width:900px){
     .about-in{grid-template-columns:1fr;gap:32px}
     .hero-in{padding:56px 0 64px}
@@ -352,6 +365,35 @@
         <span style="display:flex;gap:10px;align-items:center;font-size:14.5px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#14283f" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Envío y garantía gestionados por LifeVantage</span>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section faq">
+  <div class="wrap faq-in">
+    <div class="section-head">
+      <h2>Preguntas frecuentes</h2>
+    </div>
+    <details>
+      <summary>¿Cómo hago la compra?</summary>
+      <p>Elige el producto y pulsa "Comprar en la tienda oficial". Te lleva a la tienda oficial de LifeVantage, donde completas el pedido y el pago de forma segura.</p>
+    </details>
+    <details>
+      <summary>¿Es una compra segura?</summary>
+      <p>Sí. La compra, el pago y tus datos se gestionan íntegramente en la web oficial de LifeVantage. Esta página solo te lleva hasta el producto.</p>
+    </details>
+    <details>
+      <summary>¿Cómo son los envíos y las devoluciones?</summary>
+      <p>El envío lo gestiona LifeVantage; verás el plazo y el coste en el momento de la compra. Incluye garantía de devolución de 30 días.</p>
+    </details>
+    <details>
+      <summary>No sé qué producto elegir, ¿me ayudas?</summary>
+      <p>Claro. <a href="https://wa.me/34649042543" target="_blank" rel="noopener">Escríbeme por WhatsApp</a> y te oriento según lo que buscas, sin compromiso.</p>
+    </details>
+    <details>
+      <summary>¿Quién me atiende?</summary>
+      <p>Belén Martínez, Consultora Independiente de LifeVantage. Me tienes disponible por <a href="https://wa.me/34649042543" target="_blank" rel="noopener">WhatsApp</a> antes y después de tu compra.</p>
+    </details>
   </div>
 </section>
 
