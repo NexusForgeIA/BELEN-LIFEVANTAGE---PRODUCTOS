@@ -115,9 +115,7 @@
   .section-head{text-align:center;max-width:620px;margin:0 auto 46px}
   .section-head h2{font-size:clamp(26px,3.6vw,38px);font-weight:800;letter-spacing:-.4px;margin-bottom:12px}
   .section-head p{color:var(--muted);font-size:16px}
-  .grid{
-    display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:26px;
-  }
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
   .card{
     background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
     overflow:hidden;display:flex;flex-direction:column;transition:.25s;
@@ -145,6 +143,14 @@
   .card .buy:hover{background:var(--teal);color:#fff}
   .card .buy svg{transition:transform .2s}
   .card .buy:hover svg{transform:translateX(3px)}
+  /* Producto destacado */
+  .featured{margin-bottom:26px}
+  .card-featured{display:grid;grid-template-columns:1.15fr 1fr;align-items:stretch}
+  .card-featured .img{aspect-ratio:auto;min-height:380px;height:100%}
+  .card-featured .body{padding:44px;justify-content:center}
+  .card-featured h3{font-size:30px;line-height:1.15;margin-bottom:14px}
+  .card-featured p{font-size:16px;max-width:480px;margin-bottom:26px}
+  .card-featured .buy{align-self:flex-start;padding:15px 36px}
 
   /* About / consultant */
   .about{background:var(--soft)}
@@ -185,6 +191,9 @@
     .hero-photo{justify-self:center}
     .hero-photo img{max-width:320px}
     .hero-photo:before{display:none}
+    .card-featured{grid-template-columns:1fr}
+    .card-featured .img{min-height:260px}
+    .card-featured .body{padding:30px}
   }
   @media(max-width:600px){
     .wrap{padding:0 18px}
@@ -246,12 +255,12 @@
       <h2>Mis productos destacados</h2>
       <p>Cada botón te lleva a la ficha oficial en mi tienda, donde ves el precio actualizado y completas la compra de forma segura.</p>
     </div>
-    <div class="grid">
+    <div class="featured">
 
       <!-- Protandim Nrf2 -->
-      <article class="card">
+      <article class="card card-featured">
         <div class="img">
-          <span class="tag">Más vendido</span>
+          <span class="tag">Recomendado</span>
           <img src="https://cdn.lifevantage.com/wp-content/uploads/sites/25/2019/08/20005346/og-protandim-nrf2.jpg" alt="Protandim Nrf2" loading="lazy" width="600" height="375">
         </div>
         <div class="body">
@@ -261,6 +270,9 @@
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
       </article>
+    </div>
+
+    <div class="grid">
 
       <!-- Protandim Nrf1 -->
       <article class="card">
