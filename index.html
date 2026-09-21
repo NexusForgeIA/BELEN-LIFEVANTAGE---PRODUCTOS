@@ -179,6 +179,9 @@
   .foot-col h4{font-size:13px;text-transform:uppercase;letter-spacing:.5px;color:#8f8f99;margin-bottom:14px}
   .foot-col a,.foot-col span{display:block;color:#d4d4dc;font-size:14.5px;margin-bottom:10px;transition:.2s}
   .foot-col a:hover{color:var(--teal)}
+  .foot-col a.foot-download{display:inline-flex;align-items:center;gap:9px;margin-top:2px;padding:11px 18px;border:1.5px solid var(--teal);border-radius:100px;color:#fff;font-size:14px;font-weight:600;transition:.2s;white-space:nowrap}
+  .foot-col a.foot-download:hover{background:var(--teal);color:#fff}
+  .foot-download svg{flex-shrink:0}
   .disclaimer{
     border-top:1px solid rgba(255,255,255,.12);padding-top:24px;
     font-size:12.5px;color:#8f8f99;line-height:1.7;
@@ -414,6 +417,13 @@
         <div class="foot-col">
           <h4>Contacto</h4>
           <a href="https://wa.me/34649042543" target="_blank" rel="noopener">WhatsApp 649 04 25 43</a>
+        </div>
+        <div class="foot-col">
+          <h4>Catálogo</h4>
+          <a class="foot-download" href="assets/catalogo-lifevantage.pdf" target="_blank" rel="noopener" aria-label="Descargar catálogo LifeVantage en PDF">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>
+            Descargar catálogo
+          </a>
         </div>
       </div>
     </div>
